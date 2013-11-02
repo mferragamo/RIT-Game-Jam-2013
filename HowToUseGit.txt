@@ -1,0 +1,58 @@
+Ok guys, idk how many of you have used git before but I wanted
+to provide a basic HOW-TO to keep everything all fine and dandy.
+
+I'm specifically providing instructions as to how to use the git bash console,
+which I strongly reccommend you use. If you want to use something else, just let me know if you need help.
+
+First off, I branched the project so that there's a master and develop branch.
+
+NEVER WORK ON MASTER!
+
+So then, should you work directly on develop?
+
+No.
+
+Here's what you do.
+
+You update your branches. "git checkout develop", "git fetch" followed by "git reset --head develop"
+
+These commands will make your branches up to date.
+
+select the develop branch. "git checkout develop"
+
+then, make your own local branch. Call it whatever you want, as long as it makes sense. "git checkout -b physics"
+
+do your work and commit often. "git commit"
+Committing will update your local branch, in this case, physics.
+
+Once you are happy with how everything is working, you need to merge it into develop. Do the merging on your local branch.
+
+So you "git checkout develop" "git fetch" "git reset --hard origin/develop"
+
+then, you "git checkout <branchname>"
+
+"git merge develop"
+
+this will merge your branch with the now up-to-date develop branch. any merge conflicts will be resolved here.
+
+then, you merge back into develop "git checkout develop" "git checkout --squash <branchname>"
+
+the --squash command squishes all your commits into one commit. Here is where you add a meaningful commit message. something like "added physics into game"
+
+Now, you have one clean commit that you can push up to develop. Here, you can finally "git push origin develop"
+
+if there are no errors, CONGRATULATIONS! your update is now on the develop branch for everyone else to be able to use. If there are any issues, come see me.
+
+For development purposes this is all thats needed. The rest of the workflow is as follows.
+
+Once we have develop updated a few times, we use develop to test and debug. Issues will be tracked in Trello. Once we've tested enough that we're comfortable and the develop branch is stable, I'll update master to the new develop. 
+
+If we all follow this pattern, we can work on whatever we want up as soon as we want without getting in each other's way or worrying about breaking master.
+
+if you have any questions let me know!
+
+-matt
+
+
+then make a local branch on your 
+
