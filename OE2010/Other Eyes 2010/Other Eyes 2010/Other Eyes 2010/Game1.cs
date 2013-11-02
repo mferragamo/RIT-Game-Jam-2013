@@ -18,11 +18,13 @@ namespace Other_Eyes_2010
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        AudioManager am;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
         }
 
         /// <summary>
@@ -35,6 +37,8 @@ namespace Other_Eyes_2010
         {
             // TODO: Add your initialization logic here
             Console.WriteLine("This is a test. I'm just seeing if I can use stupid stupid stupid GitHub.");
+            am = new AudioManager(this.Content);
+            am.PlayNextSong();
             base.Initialize();
         }
 
@@ -69,6 +73,8 @@ namespace Other_Eyes_2010
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+
+            am.Update();
 
             // TODO: Add your update logic here
 
