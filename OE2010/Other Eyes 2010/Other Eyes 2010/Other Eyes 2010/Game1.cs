@@ -34,7 +34,7 @@ namespace Other_Eyes_2010
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            Console.WriteLine("This is a test. I'm just seeing if I can use stupid stupid stupid GitHub.");
             base.Initialize();
         }
 
