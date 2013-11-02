@@ -20,6 +20,15 @@ namespace Other_Eyes_2010
         SpriteBatch spriteBatch;
         AudioManager am;
 
+        // Storage
+        Player _player;
+        List<Character> _characters;
+
+        // Input handling
+        KeyboardState kbState;
+        KeyboardState prevKbState;
+
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -35,10 +44,13 @@ namespace Other_Eyes_2010
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-            Console.WriteLine("This is a test. I'm just seeing if I can use stupid stupid stupid GitHub.");
-            am = new AudioManager(this.Content);
-            am.PlayNextSong();
+            // Initialize keyboard states
+            kbState = Keyboard.GetState();
+            prevKbState = kbState;
+
+            // Create lists
+            _characters = new List<Character>();
+
             base.Initialize();
         }
 
@@ -51,7 +63,13 @@ namespace Other_Eyes_2010
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            ConstantsApp.IMAGES["player"] = this.Content.Load<Texture2D>("elements/temp_player");
+            ConstantsApp.IMAGES["character"] = this.Content.Load<Texture2D>("elements/temp_character");
+
+            _player = new Player("player", "elements/temp_player", new Vector2(300, 300));
+
+            Character tCharacter = new Character("character", "elements/temp_character", new Vector2(100, 100));
+            _characters.Add(tCharacter);
         }
 
         /// <summary>
@@ -76,7 +94,15 @@ namespace Other_Eyes_2010
 
             am.Update();
 
-            // TODO: Add your update logic here
+            // Update keyboard states
+            prevKbState = kbState;
+            kbState = Keyboard.GetState();
+
+            _player.HandleInput(kbState, prevKbState, GraphicsDevice);
+            _player.Update(gameTime);
+            foreach (Character c in _characters) {
+                c.Update(gameTime);
+            }
 
             base.Update(gameTime);
         }
@@ -89,7 +115,15 @@ namespace Other_Eyes_2010
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+
+            _player.DrawCharacter(spriteBatch);
+
+            foreach(Character c in _characters){
+                c.DrawCharacter(spriteBatch);
+            }
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

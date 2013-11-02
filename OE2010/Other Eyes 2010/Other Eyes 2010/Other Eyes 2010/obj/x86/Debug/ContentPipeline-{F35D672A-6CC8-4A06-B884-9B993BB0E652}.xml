@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>elements\temp_player.jpg</Source>
+      <Name>elements\temp_player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\banner.main.ad.rit.edu\students\fsl3852\IGMProfile\Desktop\GitHub\RIT-Game-Jam-2013\OE2010\Other Eyes 2010\Other Eyes 2010\Other Eyes 2010\bin\x86\Debug\Content\elements\temp_player.xnb</Output>
+      <Time>2013-11-02T12:23:49.605027-04:00</Time>
+    </Item>
+    <Item>
+      <Source>elements\temp_character.jpg</Source>
+      <Name>elements\temp_character</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\banner.main.ad.rit.edu\students\fsl3852\IGMProfile\Desktop\GitHub\RIT-Game-Jam-2013\OE2010\Other Eyes 2010\Other Eyes 2010\Other Eyes 2010\bin\x86\Debug\Content\elements\temp_character.xnb</Output>
+      <Time>2013-11-02T13:04:00.846012-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{F35D672A-6CC8-4A06-B884-9B993BB0E652}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>\\banner.main.ad.rit.edu\students\fsl3852\IGMProfile\Desktop\GitHub\RIT-Game-Jam-2013\OE2010\Other Eyes 2010\Other Eyes 2010\Other Eyes 2010Content\</RootDirectory>
+      <LoggerRootDirectory>\\banner.main.ad.rit.edu\students\fsl3852\IGMProfile\Desktop\GitHub\RIT-Game-Jam-2013\OE2010\Other Eyes 2010\Other Eyes 2010\Other Eyes 2010\</LoggerRootDirectory>
+      <IntermediateDirectory>\\banner.main.ad.rit.edu\students\fsl3852\IGMProfile\Desktop\GitHub\RIT-Game-Jam-2013\OE2010\Other Eyes 2010\Other Eyes 2010\Other Eyes 2010\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\banner.main.ad.rit.edu\students\fsl3852\IGMProfile\Desktop\GitHub\RIT-Game-Jam-2013\OE2010\Other Eyes 2010\Other Eyes 2010\Other Eyes 2010\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2012-09-06T14:52:54-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2012-09-06T14:52:54-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2012-09-06T14:52:54-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2012-09-06T14:52:54-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2012-09-06T14:52:54-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2012-09-06T14:52:54-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-07-31T14:49:41.0611548-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
